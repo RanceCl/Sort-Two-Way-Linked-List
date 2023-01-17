@@ -1,0 +1,17 @@
+lab3TestPlan
+Roderick "Rance" White
+roderiw
+ECE 2230 Fall 2020
+MP3
+
+First, the commands were implemented into the Lab3.c file so that the commands for APPENDREAR, SORTGEN, and SORTIP could be used. 
+
+An insert sort was implemented and tested first, seeming to work well with little more editing. 
+
+The select sort function was created and tested next, at first being quite different than the integer select sort provided in the standish examples, though after various issues with memory not being placed correctly, it was changed to be more similar. Issues with positions of elements in the list persisted, however, revealing an issue in the initial llist_insert command in which it would exceed where it should be in the list. This was fixed, and seemed to fix the memory issues with the select sort. 
+
+The iterative select sort was created using the integer iterative select sort and the methods used in the recursive select sort fuction. No issues were found.
+
+The merge sort function was constructed using a half list and a merge list function to half and merge the lists, respectively. Initially, an error in the memory showed that the merge list function was removing elements that were being compared before they could be inserted, which was fixed. A later memory issue detected revealed that the insert and remove element functions used later had been in the wrong spot.
+
+
